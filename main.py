@@ -127,6 +127,7 @@ print("9-vazifa natijasi:", new_set)  # Natija: set()
 print("10-vazifa natijasi:", colors)  # Natija: {'blue', 'yellow'}
 
 
+# #3-masala
 students = {'Ali', 'Vali', 'Sami'}
 
 added_student = 'Aziz'
@@ -156,3 +157,39 @@ print(f"9-vazifa: {graduates}")
 
 x = graduates.symmetric_difference(students)
 print(f"10-vazifa: {x}")
+
+
+# #4-masala
+numbers = {1, 2, 3, 4}
+
+added_num = 5
+numbers.add(added_num)
+print(f"(1-vazifa): Yangi raqam qo'shildi: {added_num}", numbers)
+
+removed_num = 2
+numbers.discard(removed_num)
+print(f"(2-vazifa): Raqam o'chirildi: {removed_num}", numbers)
+
+check_num = 10
+z = check_num in numbers
+print(f"(3-vazifa): {z}")
+
+more_nums = {3, 6, 7}
+print(f"4-vazifa: {more_nums}")
+
+numbers.update(more_nums)
+print(f"(5-vazifa): Raqamlar yangilandi:", numbers)
+
+common_nums = numbers.intersection(more_nums)
+print(f"(6-vazifa): Umumiy raqamlar:", common_nums)
+
+farq = numbers.difference(more_nums)
+print(f"(7-vazifa): Farq:", farq)
+
+uni = numbers.union(more_nums)
+print(f"(8-vazifa): Birlashma:", uni)
+
+max(numbers)
+print(f"(9-vazifa): Maksimal raqam:", max(numbers))
+min(numbers)
+print(f"(10-vazifa): Minimal raqam:", min(numbers))
