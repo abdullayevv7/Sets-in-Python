@@ -193,3 +193,276 @@ max(numbers)
 print(f"(9-vazifa): Maksimal raqam:", max(numbers))
 min(numbers)
 print(f"(10-vazifa): Minimal raqam:", min(numbers))
+
+
+# 5-Masala: Hayvonlar to'plami
+animals = {'cat', 'dog', 'fish'}
+
+animals.add('rabbit')
+print(animals)
+
+animals.remove('dog')
+print(animals)
+
+print('parrot' in animals)
+
+animals.add('parrot')
+print(animals)
+
+more_animals = {'lion', 'cat'}
+print(more_animals)
+
+animals.update(more_animals)
+print(animals)
+
+print(animals.difference(more_animals))
+
+print(sorted(animals))
+
+print(len(animals))
+print(animals)
+
+# 6-Masala: Xarid savati
+cart = {'milk', 'bread', 'cheese'}
+
+cart.add('butter')
+cart.remove('milk')
+print('jam' in cart)
+cart.add('jam')
+new_items = {'bread', 'yogurt'}
+cart.update(new_items)
+other_cart = {'bread', 'yogurt', 'eggs'}
+print(cart.difference(other_cart))
+print(cart.intersection(new_items))
+print(bool(cart))
+print(cart)
+
+# 7-Masala: Fanlar ro'yxati
+subjects = {'Math', 'Physics'}
+
+subjects.add('Biology')
+subjects.discard('Math')
+print('Chemistry' in subjects)
+subjects.add('Chemistry')
+extra = {'History', 'Physics'}
+print(subjects.union(extra))
+subjects_copy = subjects.copy()
+subjects_copy.add('Geography')
+print(subjects.symmetric_difference(subjects_copy))
+print(subjects)
+
+# 8-Masala: Shaharlar seti
+cities = {'Tashkent', 'Samarkand'}
+
+cities.add('Bukhara')
+cities.remove('Samarkand')
+print('Khiva' in cities)
+cities.add('Khiva')
+uzbek_cities = {'Andijan', 'Namangan', 'Tashkent'}
+cities.update(uzbek_cities)
+print(cities.difference(uzbek_cities))
+print(cities.intersection(uzbek_cities))
+print(sorted(cities))
+print(len(cities))
+print(cities)
+
+# 9-Masala: Brendlar seti
+brands = {'Nike', 'Adidas'}
+
+brands.add('Puma')
+brands.discard('Adidas')
+print('Reebok' in brands)
+brands.add('Reebok')
+local_brands = {'Sabr', 'Nike'}
+print(brands.union(local_brands))
+print(brands.difference(local_brands))
+brands_copy = brands.copy()
+brands_copy.clear()
+print(brands)
+print(brands_copy)
+
+# 10-Masala: Kitob nomlari bilan ishlash
+books = {'1984', 'Hamlet', 'Inferno'}
+
+books.add('Animal Farm')
+books.remove('Inferno')
+print('Hamlet' in books)
+books.add('Fahrenheit 451')
+new_books = {'1984', 'Dune'}
+books.update(new_books)
+print(books.difference(new_books))
+print(books.intersection(new_books))
+print(sorted(books))
+print(books)
+
+# 11-Masala: Mehmonlar ro'yxatini boshqarish
+invited = {'Ali', 'Vali', 'Salim'}
+arrived = {'Vali', 'Sami'}
+
+invited.add('Aziza')
+print(invited.intersection(arrived))
+print(invited.difference(arrived))
+print(invited.union(arrived))
+invited.clear()
+arrived.discard('Sami')
+arrived.add('Sardor')
+print(arrived.difference(invited))
+print(len(arrived))
+print(invited)
+print(arrived)
+
+# 12-Masala: Online kursga yozilganlar
+udemy = {'Alisher', 'Dilshod', 'Malika'}
+coursera = {'Malika', 'Zafar'}
+
+udemy.add('Shahnoza')
+print(udemy.intersection(coursera))
+print(coursera.difference(udemy))
+print(udemy.union(coursera))
+udemy_copy = udemy.copy()
+udemy_copy.remove('Dilshod')
+print(udemy.symmetric_difference(coursera))
+print(sorted(udemy.union(coursera)))
+print(len(udemy))
+print(len(coursera))
+print(udemy)
+print(coursera)
+
+# 13-Masala: Bo'sh ish o'rinlariga ariza topshirganlar
+it_vacancy = {'Azamat', 'Javlon', 'Sarvar'}
+design_vacancy = {'Javlon', 'Sabrina'}
+
+it_vacancy.add('Kamila')
+print(it_vacancy.difference(design_vacancy))
+print(it_vacancy.intersection(design_vacancy))
+print(design_vacancy.difference(it_vacancy))
+all_applicants = it_vacancy.union(design_vacancy)
+print(all_applicants)
+combined = all_applicants.copy()
+combined.discard('Sarvar')
+print(it_vacancy.symmetric_difference(design_vacancy))
+print(len(it_vacancy))
+print(len(design_vacancy))
+print(sorted(all_applicants))
+
+# 14-Masala: Tibbiy tekshiruvdan o'tganlar
+students = {'Ali', 'Soliha', 'Bobur'}
+checked = {'Bobur', 'Ali'}
+
+checked.add('Gulbahor')
+print(students.difference(checked))
+print(sorted(checked))
+print(students.union(checked))
+print(len(checked))
+checked_copy = checked.copy()
+checked_copy.discard('Ali')
+print(students.symmetric_difference(checked))
+print(bool(students))
+print(bool(checked))
+print(students.intersection(checked))
+print(students)
+print(checked)
+
+# 15-Masala: Sayohat qilgan o'quvchilar
+toshkent_trip = {'Olim', 'Rustam', 'Ziyoda'}
+samarkand_trip = {'Ziyoda', 'Kamola'}
+
+toshkent_trip.add('Nodira')
+print(toshkent_trip.intersection(samarkand_trip))
+print(toshkent_trip.difference(samarkand_trip))
+print(toshkent_trip.union(samarkand_trip))
+print(toshkent_trip.symmetric_difference(samarkand_trip))
+toshkent_trip.discard('Ziyoda')
+samarkand_trip.discard('Ziyoda')
+trip_copy = toshkent_trip.copy()
+trip_copy.clear()
+print(len(toshkent_trip))
+print(len(samarkand_trip))
+print(sorted(toshkent_trip.union(samarkand_trip)))
+print(toshkent_trip)
+print(samarkand_trip)
+
+# 16-Masala: Restoranga buyurtma berganlar
+online_orders = {'Ulugbek', 'Shoira', 'Ibrohim'}
+cash_orders = {'Ibrohim', 'Dilshod'}
+
+online_orders.add('Muzaffar')
+print(cash_orders.difference(online_orders))
+print(online_orders.intersection(cash_orders))
+print(online_orders.symmetric_difference(cash_orders))
+print(sorted(online_orders.union(cash_orders)))
+orders_copy = online_orders.copy()
+orders_copy.clear()
+print(len(online_orders))
+print(len(cash_orders))
+cash_orders.discard('Dilshod')
+print(online_orders)
+print(cash_orders)
+
+# 17-Masala: Sport musobaqasi qatnashchilari
+football = {'Otabek', 'Ali'}
+basketball = {'Ali', 'Javohir'}
+
+football.add('Farrux')
+print(football.intersection(basketball))
+print(football.difference(basketball))
+print(basketball.difference(football))
+print(football.union(basketball))
+print(football.symmetric_difference(basketball))
+football.discard('Ali')
+basketball.discard('Ali')
+basketball_copy = basketball.copy()
+basketball_copy.clear()
+print(football)
+print(basketball)
+print(basketball_copy)
+
+# 18-Masala: Elektron pochta ro'yxati
+registered = {'a@gmail.com', 'b@gmail.com', 'c@gmail.com'}
+verified = {'b@gmail.com', 'c@gmail.com', 'd@gmail.com'}
+
+registered.add('e@gmail.com')
+print(registered.difference(verified))
+print(registered.intersection(verified))
+print(registered.union(verified))
+print(registered.difference(verified))
+print(registered.symmetric_difference(verified))
+print(sorted(registered.union(verified)))
+print(len(registered))
+print(len(verified))
+registered.discard('c@gmail.com')
+verified.discard('c@gmail.com')
+print(registered)
+print(verified)
+
+# 19-Masala: Darsga kechikkanlar
+present = {'Asilbek', 'Nodir', 'Gulnoza'}
+late = {'Gulnoza', 'Madina'}
+
+present.add('Madina')
+print(late.difference(present))
+print(present.difference(late))
+print(present.union(late))
+print(present.symmetric_difference(late))
+present.discard('Asilbek')
+present_copy = present.copy()
+present_copy.clear()
+print(sorted(present.union(late)))
+print(present)
+print(late)
+
+# 20-Masala: Kutubxonadan kitob olganlar
+taken = {'Lola', 'Shoxrux', 'Muhammad'}
+returned = {'Muhammad', 'Lola'}
+
+taken.add('Suhrob')
+print(taken.difference(returned))
+print(len(returned))
+print(taken.union(returned))
+print(taken.difference(returned))
+print(taken.symmetric_difference(returned))
+taken.discard('Shoxrux')
+taken_copy = taken.copy()
+print(sorted(taken.union(returned)))
+print(taken)
+print(returned)
